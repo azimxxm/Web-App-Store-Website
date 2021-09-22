@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pricing One | Web App Store</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'media/favicon.png' %}">
+
+    {% include 'app/css_links.html' %}
+
+</head>
+
+<body>
+
+    {% include 'app/preloader.html' %}
+
+
+    <div id="wrapper" class="wrapper">
+
+        {% include 'app/main_content.html' %}
+
+
+        <div id="main_content">
+
+            <!--=====================================-->
+            <!--=            Navbar Start           =-->
+            <!--=====================================-->
+            {% include 'app/navbar.html' %}
+            <!--=====================================-->
+            <!--=              Navbar End           =-->
+            <!--=====================================-->
+
+            <!--=====================================-->
+            <!--=         Main Banner Start         =-->
+            <!--=====================================-->
+            {% include 'app/pricing_baner.html' %}
+
+            <!--=====================================-->
+            <!--=           Main Banner End         =-->
+            <!--=====================================-->
+            <!--=====================================-->
+            <!--=    Pricing Section Area Start     =-->
+            <!--=====================================-->
+            {% include 'app/pricing_sections.html' %}
+            <!--=====================================-->
+            <!--=     Pricing Section Area End      =-->
+            <!--=====================================-->
+
+            <!--=====================================-->
+            <!--=     Brand Section Area Start      =-->
+            <!--=====================================-->
+            {% include 'app/brand_area.html' %}
+            <!--=====================================-->
+            <!--=      Brand Section Area End       =-->
+            <!--=====================================-->
+
+            <!--=====================================-->
+            <!--=     Footer Section Area Start     =-->
+            <!--=====================================-->
+            {% include 'app/footer.html' %}
+            <!--=====================================-->
+            <!--=      Footer Section Area End      =-->
+            <!--=====================================-->
+
+        </div>
+    </div>
+
+    {% include 'app/js_links.html' %}
+
+</body>
+
+</html>
